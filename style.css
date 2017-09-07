@@ -10,3 +10,14 @@ Template: pro
 
 */
 
+/*** HEADER ***/
+
+/*** SLIDER ***/
+.x-slider-container.below { border-bottom: none!important; }
+
+/*** HOMEPAGE ***/
+.homebox { height: 300px; }
+.weather .blue { color: #3362a3; }
+.weather ul li { list-style: none; color: #333; font-weight: bold; }
+#weathericon { width: 100%; max-width: 250px; margin-top: 15px; }
+h5#weather, h5#temp { margin: 0; }
