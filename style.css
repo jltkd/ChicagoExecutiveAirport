@@ -10,6 +10,10 @@ Template: pro
 
 */
 
+/*** FONTS ***/
+body { -webkit-font-smoothing: antialiased; }
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 { margin: 0; padding: 0; }
+
 /*** HEADER ***/
 
 /*** SLIDER ***/
@@ -18,6 +22,31 @@ Template: pro
 /*** HOMEPAGE ***/
 .homebox { height: 300px; }
 .weather .blue { color: #3362a3; }
+.weather ul { margin: 0; }
 .weather ul li { list-style: none; color: #333; font-weight: bold; }
 #weathericon { width: 100%; max-width: 250px; margin-top: 15px; }
 h5#weather, h5#temp { margin: 0; }
+.homebox { position: relative; }
+.smalltitlewhite { color: #fff; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 20px; }
+.bigtitlewhite { color: #fff; font-weight: bold; font-size: 1.5rem; line-height: 24px; }
+.smalltitleblack { text-transform: uppercase; font-size: 0.8rem; margin-bottom: 20px; }
+.bigtitleblack { font-weight: bold; font-size: 1.5rem; line-height: 24px; }
+.blogtitle:before { content: url(http://184.175.101.117/~chiexec/wp-content/uploads/2017/09/blogtriangle.svg); width: 50px; position: absolute; top: 33%; right: -19px; }
+.homebox a.arrowlinkwhite { content: url(http://184.175.101.117/~chiexec/wp-content/uploads/2017/09/white-square-solid.svg); width: 30px; height: auto; position: absolute; bottom: 20px; left: 20px; transition: all 0.9s ease; }
+.homebox a:hover.arrowlinkwhite { content: url(http://184.175.101.117/~chiexec/wp-content/uploads/2017/09/white-square-open.svg); }
+.homebox a.arrowlinkblack { content: url(http://184.175.101.117/~chiexec/wp-content/uploads/2017/09/dark-square-solid.svg); width: 30px; height: auto; position: absolute; bottom: 20px; left: 20px; transition: all 0.9s ease; }
+.homebox a:hover.arrowlinkblack { content: url(http://184.175.101.117/~chiexec/wp-content/uploads/2017/09/dark-square-open.svg); }
+
+/*** SUB PAGES ***/
+.entry-wrap { box-shadow: none; padding: 0; }
+
+
+/*** SIDEBAR MENU ***/
+.widget .menu { border-left: 1px solid #808285; border-right: none; border-top: none; border-bottom: none; border-radius: 0;  }
+.widget .menu .menu-item, .x-sidebar .menu .menu-item a { border-bottom: none; }
+.widget .menu .current-menu-item a:before { content: "\f0da"; opacity: 1; }
+.widget .menu .current-menu-item > a, .x-sidebar .menu a:hover { color: #3362a3; }
+.widget .menu a { transition: all 0.5s ease; border-bottom: none; }
+.widget .menu a:before { content: ""; }
+.widget .menu a:hover { margin-left: 10px; content: "\f0da"; }
+.widget .menu a:hover:before { content: "\f0da"; color: #3362a3; opacity: 1; }
